@@ -54,17 +54,16 @@ public class LivroDBHelper extends SQLiteOpenHelper {
 
     public Livro adicionarLivroBD(Livro l){
         ContentValues values = new ContentValues();
+        values.put(ID, l.getId()); // <--- ESTA LINHA É O SEGREDO
         values.put(ANO, l.getAno());
         values.put(TITULO, l.getTitulo());
         values.put(AUTOR, l.getAutor());
         values.put(CAPA, l.getCapa());
         values.put(SERIE, l.getSerie());
-        long id = this.db.insert(TABLE_LIVROS, null , values);
-        if (id>-1){
-            l.setId((int)id);
+
+        // Inserir com o ID correto
+        this.db.insert(TABLE_LIVROS, null , values);
         return l;
-        }
-        return null;
     }
 
 

@@ -64,7 +64,7 @@ public class SingletonGestorLivros {
     }
 
     public Livro getLivroById(int id) {
-        for (Livro livro : livros) {
+        for (Livro livro : getLivros()) {
             if (livro.getId() == id) {
                 return livro;
             }

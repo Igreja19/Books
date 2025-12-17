@@ -76,14 +76,16 @@ public class ListaLivrosFragment extends Fragment implements LivrosListener {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        //super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == MenuMainActivity.ADD) {
-           SingletonGestorLivros.getInstancia(getContext()).getAllLivrosAPI(getContext());
-            Toast.makeText(getContext(), "Livro adicionado com sucesso", Toast.LENGTH_SHORT).show();
-        }
-        else if (requestCode == MenuMainActivity.EDIT){
+        if (resultCode == android.app.Activity.RESULT_OK) {
+            if (requestCode == MenuMainActivity.ADD) {
+                Toast.makeText(getContext(), "Livro adicionado com sucesso", Toast.LENGTH_SHORT).show();
+            }
+            else if (requestCode == MenuMainActivity.EDIT) {
+                // Serve tanto para Editar como para Apagar
+                Toast.makeText(getContext(), "Operação realizada com sucesso", Toast.LENGTH_SHORT).show();
+            }
+            // Atualiza a lista
             SingletonGestorLivros.getInstancia(getContext()).getAllLivrosAPI(getContext());
-            Toast.makeText(getContext(), "Livro editado com sucesso", Toast.LENGTH_SHORT).show();
         }
     }
 

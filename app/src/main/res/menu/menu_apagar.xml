@@ -5,6 +5,5 @@
         android:id="@+id/itemApagar"
         android:icon="@drawable/ic_action_apagar"
         android:title="Apagar"
-        app:actionViewClass="android.widget.SearchView"
         app:showAsAction="always"/>
 </menu>
