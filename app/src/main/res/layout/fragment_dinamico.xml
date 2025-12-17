@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".DinamicoFragment"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/Capa"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="0.3"
+        app:srcCompat="@drawable/programarandroid1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tvLabelTitulo"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Título: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="textview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLabelSerie"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Serie: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSerie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="textview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLabelAutor"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Autor: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAutor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="textview" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvLabelAno"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Ano: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="textview" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

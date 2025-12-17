@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:fitsSystemWindows="true">
+
+
+    <TextView
+        android:id="@+id/tvBemvindo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bem Vindo!"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNomeEmail"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email@gmail.com" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
+
+    <Button
+        android:id="@+id/btnEstatico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Livro Estático"
+        android:padding="22dp" />
+
+    <Button
+        android:id="@+id/btnDinamico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Livro Dinâmico"
+        android:padding="22dp"/>
+
+    <Button
+        android:id="@+id/btnEnviarEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Email"
+        android:padding="22dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"/>
+
+</LinearLayout>
